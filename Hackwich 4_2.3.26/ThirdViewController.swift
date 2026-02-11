@@ -11,11 +11,17 @@ class ThirdViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        todoLabel.text = "My To Do List"
+        
+        
     }
     
 
+    @IBOutlet weak var todoLabel: UILabel!
+    
+    
     /*
     // MARK: - Navigation
 

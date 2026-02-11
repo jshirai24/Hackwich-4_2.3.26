@@ -13,9 +13,13 @@ class Second_ViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+      
+        classesLabel.text = "My Classes"
+        
     }
     
-
+    @IBOutlet weak var classesLabel: UILabel!
+    
     /*
     // MARK: - Navigation
 

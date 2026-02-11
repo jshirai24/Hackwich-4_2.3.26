@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        aboutLabel.text = "About"
+        aboutLabel.text = "About Me"
     }
 
     @IBOutlet weak var aboutLabel: UILabel!
