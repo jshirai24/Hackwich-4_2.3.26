@@ -13,6 +13,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         aboutLabel.text = "About Me"
+    
     }
 
     @IBOutlet weak var aboutLabel: UILabel!

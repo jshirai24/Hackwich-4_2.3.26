@@ -11,11 +11,28 @@ class FourthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        
+        foodLabel.text = "My Favorite Foods"
+        foodButtonTitle.setTitle("Favorite Foods", for: .normal)
+        
+        
     }
     
+    @IBOutlet weak var foodLabel: UILabel!
 
+    
+    @IBOutlet weak var foodButtonTitle: UIButton!
+    
+    @IBAction func foodButtonPressed(_ sender: UIButton) {
+        foodLabel.text = "Chocolate, pasta, and ramen" }
+    
+    
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
