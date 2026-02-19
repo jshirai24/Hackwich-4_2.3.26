@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upq-lo-AUt">
-                                <rect key="frame" x="125" y="152" width="142" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upq-lo-AUt">
+                                <rect key="frame" x="125" y="152" width="143" height="120"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,6 +25,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qIQ-Zl-oI7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qIQ-Zl-oI7" firstAttribute="bottom" secondItem="Upq-lo-AUt" secondAttribute="bottom" constant="463" id="8TY-pB-xJr"/>
+                            <constraint firstItem="Upq-lo-AUt" firstAttribute="top" secondItem="W5w-Zh-lk3" secondAttribute="topMargin" constant="-20" id="HXd-eO-xZV"/>
+                            <constraint firstItem="Upq-lo-AUt" firstAttribute="centerX" secondItem="W5w-Zh-lk3" secondAttribute="centerX" id="Iaz-rN-ceT"/>
+                            <constraint firstItem="Upq-lo-AUt" firstAttribute="leading" secondItem="qIQ-Zl-oI7" secondAttribute="leading" constant="125" id="KAE-5e-uaY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="W66-OB-2vU"/>
                     <connections>
@@ -72,18 +77,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfr-pu-Cti">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfr-pu-Cti">
                                 <rect key="frame" x="113" y="588" width="154" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="10i-BQ-zrb"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
                                     <action selector="foodButtonPressed:" destination="7gG-cN-xnH" eventType="touchUpInside" id="eqo-pw-sA1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvL-9D-8Ui">
-                                <rect key="frame" x="122" y="190" width="148" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvL-9D-8Ui">
+                                <rect key="frame" x="122" y="190" width="149" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="ysC-dN-dh3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -91,6 +100,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dyR-IQ-Pnn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MvL-9D-8Ui" firstAttribute="leading" secondItem="dyR-IQ-Pnn" secondAttribute="leading" constant="122" id="2D6-pP-Xc0"/>
+                            <constraint firstItem="dyR-IQ-Pnn" firstAttribute="bottom" secondItem="sfr-pu-Cti" secondAttribute="bottom" constant="72" id="D1L-uC-y8c"/>
+                            <constraint firstItem="MvL-9D-8Ui" firstAttribute="centerX" secondItem="dPy-eJ-4Kq" secondAttribute="centerX" id="Oa2-6T-tTp"/>
+                            <constraint firstItem="sfr-pu-Cti" firstAttribute="leading" secondItem="dyR-IQ-Pnn" secondAttribute="leading" constant="113" id="PAf-Mo-yc1"/>
+                            <constraint firstItem="MvL-9D-8Ui" firstAttribute="top" secondItem="dyR-IQ-Pnn" secondAttribute="top" constant="18" id="hnN-LU-UFf"/>
+                            <constraint firstItem="dyR-IQ-Pnn" firstAttribute="trailing" secondItem="sfr-pu-Cti" secondAttribute="trailing" constant="126" id="ptP-EI-hqO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Hq6-pj-fLK"/>
                     <connections>
